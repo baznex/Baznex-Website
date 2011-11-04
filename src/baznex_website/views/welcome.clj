@@ -4,7 +4,7 @@
         hiccup.core
         hiccup.page-helpers))
 
-(defpage "/welcome" []
+(defpage "/" []
   (layout
     [:h1 "B.A.Z.N.E.X."]
     [:h2 "Boston Autonomous Zone Nerd Nexus"]))
