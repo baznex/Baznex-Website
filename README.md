@@ -1,6 +1,6 @@
-# baznex-website
+# Baznex Website
 
-A website written in noir. 
+[Currently hosted on heroku](http://baznex.herokuapp.com/).
 
 ## Usage
 
@@ -11,7 +11,5 @@ lein run
 
 ## License
 
-Copyright (C) 2011 FIXME
-
-Distributed under the Eclipse Public License, the same as Clojure.
+Copyright (C) 2011 BAZNEX - Boston Autonomous Zone Nerd Nexus
 
