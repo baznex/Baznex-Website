@@ -1,11 +1,11 @@
 (ns baznex-website.views.index
-  (:use [baznex-website.views.common :only (layout)]
+  (:use [baznex-website.views.common :only (baznex-layout)]
         [noir.core :only [defpage]]
         hiccup.core
         hiccup.page-helpers))
 
 (defpage "/" []
-  (layout
+  (baznex-layout
     [:h1 "Boston Autonomous Zone Nerd Nexus"]
     [:h2 "What's New?"]
     [:ul

@@ -1,5 +1,6 @@
 (ns baznex-website.views.common
-  (:use noir.core
+  (:use [baznex-website.css :only (baznex-css)]
+        noir.core
         hiccup.core
         hiccup.page-helpers))
 
@@ -8,12 +9,12 @@
      (html5
        ~@body)))
 
-(defpartial5 layout [& content]
+(defpartial5 baznex-layout [& content]
   [:head
-    [:title "baznex-website"]
-      ;;(include-css "/css/reset.css")
-      ]
-  [:body
+    [:title "B.A.Z.N.E.X."]
+      (map include-css ["/css/reset.css"])
+      [:style {:type "text/css"} (baznex-css)] ]
+    [:body
     [:header]
     [:div#wrapper content]
     [:footer]])

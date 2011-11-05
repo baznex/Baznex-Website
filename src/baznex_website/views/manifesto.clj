@@ -1,11 +1,11 @@
 (ns baznex_website.views.manifesto
-  (:use [baznex-website.views.common :only (layout)]
+  (:use [baznex-website.views.common :only (baznex-layout)]
         [noir.core :only [defpage]]
         hiccup.core
         hiccup.page-helpers))
 
 (defpage "/manifesto" []
-  (layout
+  (baznex-layout
     [:h1 "B.A.Z.N.E.X."]
     [:h2 "Boston Autonomous Zone Nerd Nexus"]
 
