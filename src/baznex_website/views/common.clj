@@ -9,9 +9,9 @@
      (html5
        ~@body)))
 
-(defpartial5 baznex-layout [& content]
+(defpartial5 baznex-layout [title & content]
   [:head
-    [:title "B.A.Z.N.E.X."]
+    [:title (str "B.A.Z.N.E.X. - " title)]
       (map include-css ["/css/reset.css"])
       [:style {:type "text/css"} (baznex-css)] ]
     [:body

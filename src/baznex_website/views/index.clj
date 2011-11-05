@@ -5,7 +5,7 @@
         hiccup.page-helpers))
 
 (defpage "/" []
-  (baznex-layout
+  (baznex-layout "Boston Autonomous Zone Nerd Nexus"
     [:h1 "Boston Autonomous Zone Nerd Nexus"]
     [:h2 "What's New?"]
     [:ul

@@ -5,7 +5,7 @@
         hiccup.page-helpers))
 
 (defpage "/manifesto" []
-  (baznex-layout
+  (baznex-layout "The Manifesto"
     [:h1 "B.A.Z.N.E.X."]
     [:h2 "Boston Autonomous Zone Nerd Nexus"]
 
