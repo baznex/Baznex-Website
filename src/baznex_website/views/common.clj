@@ -9,5 +9,9 @@
        ~@body)))
 
 (defpartial5 layout [& content]
-  [:head [:title "baznex-website"] (include-css "/css/reset.css")]
-  [:body [:div#wrapper content]])
+  [:head
+    [:title "baznex-website"]
+      ;;(include-css "/css/reset.css")
+      ]
+  [:body
+    [:div#wrapper content]])

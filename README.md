@@ -1,6 +1,6 @@
 # Baznex Website
 
-[Currently hosted on heroku](http://baznex.herokuapp.com/).
+[Currently hosted on Heroku](http://baznex.herokuapp.com/).
 
 ## Usage
 
