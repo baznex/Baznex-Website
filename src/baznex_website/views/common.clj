@@ -14,4 +14,6 @@
       ;;(include-css "/css/reset.css")
       ]
   [:body
-    [:div#wrapper content]])
+    [:header]
+    [:div#wrapper content]
+    [:footer]])

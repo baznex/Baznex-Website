@@ -4,7 +4,7 @@
         hiccup.core
         hiccup.page-helpers))
 
-(defn manifesto []
+(defpage "/manifesto" []
   (layout
     [:h1 "B.A.Z.N.E.X."]
     [:h2 "Boston Autonomous Zone Nerd Nexus"]
@@ -20,7 +20,6 @@
       [:li "BAZNEX is not a place to teach or be taught, but it is a place to grow together with others, and to teach when called upon to do so."]
       [:li "BAZNEX has NO agenda. There are no lectures and no prearranged topics. You come, you meet others, and you join the party. That good vibe you feel here is what we call the Nerd Nexus."]
       [:li "BAZNEX has no leader, but for the force of willpower generated through a phenomenon called a Nerd Nexus - that moment with the vibes so delicious, and the love of computer science and software development, as well as the inspired action for the community, and for the history of computing."] ]
-
 
     [:h1 "Okay, BAZNEX isn’t any of those things. So what IS it??"]
     [:ul
@@ -47,9 +46,3 @@
     [:p "Also, if this all is jiving with you, we've got a BAZNEX Google Group we've just started, where all future discussion of BAZNEX will transpire."]
 
     [:p "Please tell anyone you think may be interested. The more the merrier.  Any suggestions, offerings, additions, or displays of exuberance, also invited."] ))
-
-(defpage "/" []
-  (manifesto))
-
-(defpage "/manifesto" []
-  (manifesto))
