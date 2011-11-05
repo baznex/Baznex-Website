@@ -1,23 +1,25 @@
 (ns baznex-website.css
-  (:use cssgen))
+  (:use cssgen
+        cssgen.types))
 
 (def fldi (mixin :float :left
                  :display :inline))
 
-(def emphasis (mixin :color :#6bffbd))
-(def de-emph (mixin :color :#91979d))
-(def dark-background (mixin :background :#2a2b2b
-                            :color :#d1d9e1))
+(def dark-background (mixin :background :#81ECB8
+                            :color :#106B3E))
 
 (def light-text (mixin :color :#d1d9e1))
+(def dark-text (mixin :color :#6B2710))
+(def emphasis (mixin :color :#41261D))
+(def de-emph (mixin :color :#9D4020))
 (def box (mixin :border-radius :8px
                 :padding :10px))
 (def light-box (mixin box
-                      :background :#474949
+                      :background :#CDDBC6
                       :border [:2px :solid :#616363]))
 (def emph-box (mixin box
-                     :background :#3f634d
-                     :border [:2px :solid :#3c8455]))
+                     :background :#6EA954
+                     :border [:2px :solid :#8BA77F]))
 
 
 (defn baznex-css []
@@ -30,39 +32,35 @@
           fldi
           :padding-bottom :100px)
     (rule "h1"
+          :margin-top :15px
           :margin-bottom :0px
-          light-text)
+          :font-size :25px
+          dark-text)
     (rule "h2"
+          dark-text
           :margin-top :10px
-          :margin-left :60px
+          :margin-left :20px
           :font-size :18px
           :font-weight :normal)
     (rule "code"
           fldi
           light-box
           :font-family "Monaco, Consolas, 'Courier New'")
-    (rule "#header"
-          :margin-bottom :50px)
     (rule "ul"
+          light-box
+          :margin :10px :10px :15px :10px
           (rule "li"
-                fldi
-                :margin-bottom :55px
-                :width "100%"
-                (rule ".left"
-                      fldi
-                      :width "45%"
-                      :margin-right "5%"
-                      (rule "p"
-                            :padding 0
-                            :margin 0
-                            :font-size :18px))
-            (rule ".right"
-                      fldi
-                      :width "50%"
-                      (rule "code"
-                            :width "100%")
-                      (rule "p"
-                            :max-width :440px))))
+                :margin-left :15px
+                :width "100%" ))
+    (rule "p"
+          :margin (em 1.12) (em 0))
+
+    (rule "a"
+          dark-text
+          (rule "&:hover"
+                emphasis)
+          (rule "&:visited"
+                de-emph))
 
     (rule "#not-found"
           :text-align :center
@@ -107,5 +105,4 @@
                 :font-weight :normal
                 de-emph)
           (rule ".mine"
-                emph-box))
-    ))
+                emph-box))))
