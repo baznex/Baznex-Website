@@ -19,10 +19,12 @@
           fldi
           :padding-bottom :100px)
     (rule "h1"
+          :font-weight :bold
           :margin-top :15px
           :margin-bottom :0px
           :font-size :25px)
     (rule "h2"
+          :font-weight :bold
           :margin-top :10px
           :margin-left :20px
           :font-size :18px
@@ -53,7 +55,8 @@
     (rule "#exception"
           :max-width :900px
           :min-width :500px
-          (rule "h1"
+          (rule "h1"   
+                :font-weight :bold
                 :font-size :24px)
           (rule "ul"
                 :margin 0
@@ -73,10 +76,9 @@
           (rule ".dt"
                 :text-align :right)
           (rule ".dd"
-                de-emph
                 :margin 0
                 :padding-left "5%")
           (rule "h1 span"
+                :font-weight :bold
                 :font-size :18px
-                :font-weight :normal
-                de-emph))))
+                :font-weight :normal))))
