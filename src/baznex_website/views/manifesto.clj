@@ -41,8 +41,8 @@
 
     [:p "The current process we've done (a total of one time) is to have everyone write down on index cards  the different activities they might want to do at that gathering.  Then put them all together and we split up into pairs or triples. Last gathering index cards were written such as \"want to look at SeeSaw?\", \"talk more about teaching programming\", \"fix the code Alex broke in Midje\", \"do some remote pairing, or at least learn more about how we could\", \"create a Content Management system in Clojure\", \"can anyone help me with my 5 minute lightning talk on Clojure I'm doing tomorrow?\""]
 
-    [:p "We're looking into finding larger venues preferably closer to downtown Boston for easier access by all of us, and places that can fit more of us than just a coffee shop can handle.  Sprout in Davis Square is going to be our next location to try out on Wednesday Nov 1."]
+    [:p "We're looking into finding larger venues preferably closer to downtown Boston for easier access by all of us, and places that can fit more of us than just a coffee shop can handle. " [:a {:href "http://thesprouts.org/" :target "_blank"} "Sprout in Davis Square"] " is going to be our next location to try out on Wednesday Nov 1. [Note Dec. 7, 2011: have tried and enjoyed Sprout.  Will gather there again in the future for sure.]"]
 
-    [:p "Also, if this all is jiving with you, we've got a BAZNEX Google Group we've just started, where all future discussion of BAZNEX will transpire."]
+    [:p "Also, if this all is jiving with you, we've got a " [:a {:href "http://groups.google.com/group/baznex" :target "_blank"} "BAZNEX Google Group"] " we've just started, where all future discussion of BAZNEX will transpire."]
 
     [:p "Please tell anyone you think may be interested. The more the merrier.  Any suggestions, offerings, additions, or displays of exuberance, also invited."] ))
