@@ -7,10 +7,10 @@
 (defpage "/manifesto" []
   (baznex-layout "The Manifesto"
     [:h1 "B.A.Z.N.E.X."]
-    [:h2 "Boston Autonomous Zone Nerd Nexus"]
+    [:h3 "Boston Autonomous Zone Nerd Nexus"]
 
     [:p "The short version is that we’re a self-directed organization focused on the joys of software development, community, and learning."]
-    [:p "Before we get into more details about what we are let’s start with what BAZNEX is NOT"]
+    [:p "Before we get into more details about what we are let’s start with what BAZNEX is NOT: "]
     [:ul
       [:li "BAZNEX is not a meetup, but we do meet together."]
       [:li "BAZNEX is not a forum, but we do discuss."]
@@ -21,7 +21,7 @@
       [:li "BAZNEX has NO agenda. There are no lectures and no prearranged topics. You come, you meet others, and you join the party. That good vibe you feel here is what we call the Nerd Nexus."]
       [:li "BAZNEX has no leader, but for the force of willpower generated through a phenomenon called a Nerd Nexus - that moment with the vibes so delicious, and the love of computer science and software development, as well as the inspired action for the community, and for the history of computing."] ]
 
-    [:h1 "Okay, BAZNEX isn’t any of those things. So what IS it??"]
+    [:h2 "Okay, BAZNEX isn’t any of those things. So what IS it??: "]
     [:ul
       [:li "BAZNEX is appreciating and revering the history of our profession."]
       [:li "BAZNEX is sharing cool software stuff."]
@@ -35,7 +35,7 @@
       [:li "But you can generally count on working on some code, and learning cool stuff from those you pair up with at the nexus.  You are encouraged to write on the wiki what your interests are; that way others who are interested in learning with you can say hello and you may pair together, and vice versa!"]
       [:li "BAZNEX grows organically; your presence makes you a part of it all, and so your desires matter."] ]
 
-    [:h1 "What you can do if you're interested in joining the Nexus"]
+    [:h2 "What you can do if you're interested in joining the Nexus"]
 
     [:p "We're very much in a primordial state. We have had one small (successful!) gathering of three at the Andala coffee shop in Central Square Cambridge where we discussed why I love index cards, a bit about teaching others programming, took a look at the SeeSaw Clojure Swing-wrapping library, and took time to work on adding a feature to Midje, a Clojure testing/mocking framework."]
 

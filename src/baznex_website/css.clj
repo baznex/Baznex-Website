@@ -22,8 +22,14 @@
           :font-weight :bold
           :margin-top :15px
           :margin-bottom :0px
-          :font-size :25px)
+          :font-size :35px)
     (rule "h2"
+          :font-weight :bold
+          :margin-top :15px
+          :margin-bottom :0px
+          :font-size :24px)
+    (rule "h3"
+          emphasis
           :font-weight :bold
           :margin-top :10px
           :margin-left :20px
