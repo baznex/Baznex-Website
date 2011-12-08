@@ -5,27 +5,14 @@
 (def fldi (mixin :float :left
                  :display :inline))
 
-(def dark-background (mixin :background :#81ECB8
-                            :color :#106B3E))
-
-(def light-text (mixin :color :#d1d9e1))
-(def dark-text (mixin :color :#6B2710))
-(def emphasis (mixin :color :#41261D))
-(def de-emph (mixin :color :#9D4020))
+(def dark-text (mixin :color :black))
+(def emphasis (mixin :font-style :italic))
 (def box (mixin :border-radius :8px
-                :padding :10px))
-(def light-box (mixin box
-                      :background :#CDDBC6
-                      :border [:2px :solid :#616363]))
-(def emph-box (mixin box
-                     :background :#6EA954
-                     :border [:2px :solid :#8BA77F]))
-
+           :padding :10px))
 
 (defn baznex-css []
   (css
     (rule "body"
-          dark-background
           :padding [:60px :80px]
           :font-family "'Helvetica Neue',Helvetica,Verdana")
     (rule "#wrapper"
@@ -34,20 +21,13 @@
     (rule "h1"
           :margin-top :15px
           :margin-bottom :0px
-          :font-size :25px
-          dark-text)
+          :font-size :25px)
     (rule "h2"
-          dark-text
           :margin-top :10px
           :margin-left :20px
           :font-size :18px
           :font-weight :normal)
-    (rule "code"
-          fldi
-          light-box
-          :font-family "Monaco, Consolas, 'Courier New'")
-    (rule "ul"
-          light-box
+    (rule "ul"         
           :margin :10px :10px :15px :10px
           (rule "li"
                 :margin-left :15px
@@ -56,11 +36,8 @@
           :margin (em 1.12) (em 0))
 
     (rule "a"
-          dark-text
           (rule "&:hover"
-                emphasis)
-          (rule "&:visited"
-                de-emph))
+                emphasis))
 
     (rule "#not-found"
           :text-align :center
@@ -88,7 +65,6 @@
                 :margin-top :20px
                 :border-collapse :collapse)
           (rule "tr"
-                light-box
                 :margin-bottom :10px
                 :width "100%")
           (rule "td"
@@ -103,6 +79,4 @@
           (rule "h1 span"
                 :font-size :18px
                 :font-weight :normal
-                de-emph)
-          (rule ".mine"
-                emph-box))))
+                de-emph))))
