@@ -5,7 +5,7 @@
         hiccup.page-helpers))
 
 (let [google-group-link [:a {:href "http://groups.google.com/group/baznex" :target "_blank"} "BAZNEX Google Group"]
-      sprout-link [:a {:href "http://thesprouts.org/studios" :target "_blank"} "Sprout in Davis Square"]]
+      sprout-link [:a {:href "http://thesprouts.org/" :target "_blank"} "Sprout in Davis Square"]]
 
   (defpage "/manifesto" []
     (baznex-layout "The Manifesto"
