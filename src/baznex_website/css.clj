@@ -8,12 +8,12 @@
 (def dark-text (mixin :color :black))
 (def emphasis (mixin :font-style :italic))
 (def box (mixin :border-radius :8px
-           :padding :10px))
+                :padding :10px))
 
 (defn baznex-css []
   (css
     (rule "body"
-          :padding [:60px :80px]
+          :padding [:45px :80px]
           :font-family "'Helvetica Neue',Helvetica,Verdana")
     (rule "#wrapper"
           fldi
