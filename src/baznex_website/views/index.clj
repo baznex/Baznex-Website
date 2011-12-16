@@ -16,4 +16,8 @@
   
     [:h1 "When"] 
     [:p "Every other Wednesday at 6pm ending whenever you want to leave, but you can't sleep here."]
-    [:p "Check the " google-group-link " for the next date."] ))
+    [:p "Check the " google-group-link " for the next date."] 
+    
+    [:h1 "You"]
+    [:p "Is there something you're passionate about sharing, doing, or learning about?"] 
+    [:p "That's what B.A.Z.N.E.X. is all about."] ))
