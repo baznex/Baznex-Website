@@ -19,3 +19,7 @@
 (def sprout-link [:a {:href "http://thesprouts.org/studios" :target "_blank"} "Sprout in Davis Square"])
 
 (def manifesto-link [:a {:href "/manifesto"} "BAZNEX Manifesto"])
+
+(def github-link [:a {:href "http://www.github.com/baznex" :target "_blank"} "BAZNEX @ Github"])
+
+(def trycljs-github-link [:a {:href "https://github.com/baznex/trycljs" :target "_blank"} "TryCljs &ndash; an online ClojureScript REPL, based off of TryClojure"])

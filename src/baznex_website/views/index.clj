@@ -9,7 +9,8 @@
     [:h1 "What"]
     [:ul
       [:li manifesto-link]
-      [:li google-group-link]]
+      [:li google-group-link]
+      [:li github-link]]
     
     [:h1 "Where"]
     [:p "Currently gathering at " sprout-link] 
@@ -20,4 +21,8 @@
     
     [:h1 "You"]
     [:p "Is there something you're passionate about sharing, doing, or learning about?"] 
-    [:p "That's what B.A.Z.N.E.X. is all about."] ))
+    [:p "That's what B.A.Z.N.E.X. is all about."] 
+    
+    [:h1 "Notable BAZNEX Projects"]
+    [:ul
+      [:li trycljs-github-link]] ))
