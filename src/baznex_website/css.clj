@@ -44,10 +44,6 @@
     (rule "p"
           :margin (em 1.12) (em 0))
 
-    (rule "a"
-          (rule "&:hover"
-                emphasis))
-
     (rule "blockquote"
       :font-style :italic
       :margin :10px :10px :15px :10px)
