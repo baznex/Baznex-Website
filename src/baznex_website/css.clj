@@ -13,6 +13,7 @@
 (defn baznex-css []
   (css
     (rule "body"
+          :width :800px
           :padding [:45px :80px]
           :font-family "'Helvetica Neue',Helvetica,Verdana")
     (rule "#wrapper"
