@@ -14,23 +14,28 @@
       [:div#wrapper content]
       [:footer]] ))
 
-(defmacro definternallink [name relative-path text]
-  `(def ~name [:a {:href ~relative-path} ~text]))
+(defn internal-link 
+  "A link within the site"
+  [relative-path text]
+  [:a {:href relative-path} text])
 
-(definternallink manifesto-link "/manifesto" "BAZNEX Manifesto")
+(def manifesto-link (internal-link "/manifesto" "BAZNEX Manifesto"))
 
 
-(defmacro defexternallink [name link text]
-  `(def ~name [:a {:href ~link :target "_blank"} ~text] ))
+(defn external-link 
+  "A link external to the site"
+  [link text]
+  [:a {:href link :target "_blank"} text] )
 
-(defexternallink google-group-link "http://groups.google.com/group/baznex" "BAZNEX @ Google Groups")
+(def google-group-link (external-link "http://groups.google.com/group/baznex" "BAZNEX @ Google Groups"))
 
-(defexternallink sprout-link "http://thesprouts.org/studios" "Sprout in Davis Square")
+(def sprout-link (external-link "http://thesprouts.org/studios" "Sprout in Davis Square"))
 
-(defexternallink twitter-link "http://twitter.com/#!/search?q=%23baznex" "#baznex @ Twitter")
 
-(defexternallink github-link "http://www.github.com/baznex" "BAZNEX @ GitHub")
+(def twitter-link (external-link "http://twitter.com/#!/search?q=%23baznex" "#baznex @ Twitter"))
 
-(defexternallink trycljs-github-link "https://github.com/baznex/trycljs" "TryCljs &ndash; an online ClojureScript REPL, based off of TryClojure")
+(def github-link (external-link "http://www.github.com/baznex" "BAZNEX @ GitHub"))
 
-(defexternallink baznex-website-github-link "https://github.com/baznex/Baznex-Website" "BAZNEX Website &ndash; source available on GitHub")
+(def trycljs-github-link (external-link "https://github.com/baznex/trycljs" "TryCljs &ndash; an online ClojureScript REPL, based off of TryClojure"))
+
+(def baznex-website-github-link (external-link "https://github.com/baznex/Baznex-Website" "BAZNEX Website &ndash; source available on GitHub"))
