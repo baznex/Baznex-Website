@@ -14,16 +14,23 @@
       [:div#wrapper content]
       [:footer]] ))
 
-(def google-group-link [:a {:href "http://groups.google.com/group/baznex" :target "_blank"} "BAZNEX @ Google Groups"])
+(defmacro definternallink [name relative-path text]
+  `(def ~name [:a {:href ~relative-path} ~text]))
 
-(def sprout-link [:a {:href "http://thesprouts.org/studios" :target "_blank"} "Sprout in Davis Square"])
+(definternallink manifesto-link "/manifesto" "BAZNEX Manifesto")
 
-(def manifesto-link [:a {:href "/manifesto"} "BAZNEX Manifesto"])
 
-(def twitter-link [:a {:href "http://twitter.com/#!/search?q=%23baznex"} "#baznex @ Twitter"])
+(defmacro defexternallink [name link text]
+  `(def ~name [:a {:href ~link :target "_blank"} ~text] ))
 
-(def github-link [:a {:href "http://www.github.com/baznex" :target "_blank"} "BAZNEX @ GitHub"])
+(defexternallink google-group-link "http://groups.google.com/group/baznex" "BAZNEX @ Google Groups")
 
-(def trycljs-github-link [:a {:href "https://github.com/baznex/trycljs" :target "_blank"} "TryCljs &ndash; an online ClojureScript REPL, based off of TryClojure"])
+(defexternallink sprout-link "http://thesprouts.org/studios" "Sprout in Davis Square")
 
-(def baznex-website-github-link [:a {:href "https://github.com/baznex/Baznex-Website" :target "_blank"} "BAZNEX Website &ndash; source available on GitHub"])
+(defexternallink twitter-link "http://twitter.com/#!/search?q=%23baznex" "#baznex @ Twitter")
+
+(defexternallink github-link "http://www.github.com/baznex" "BAZNEX @ GitHub")
+
+(defexternallink trycljs-github-link "https://github.com/baznex/trycljs" "TryCljs &ndash; an online ClojureScript REPL, based off of TryClojure")
+
+(defexternallink baznex-website-github-link "https://github.com/baznex/Baznex-Website" "BAZNEX Website &ndash; source available on GitHub")
