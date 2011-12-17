@@ -20,6 +20,8 @@
 
 (def manifesto-link [:a {:href "/manifesto"} "BAZNEX Manifesto"])
 
-(def github-link [:a {:href "http://www.github.com/baznex" :target "_blank"} "BAZNEX @ Github"])
+(def github-link [:a {:href "http://www.github.com/baznex" :target "_blank"} "BAZNEX @ GitHub"])
 
 (def trycljs-github-link [:a {:href "https://github.com/baznex/trycljs" :target "_blank"} "TryCljs &ndash; an online ClojureScript REPL, based off of TryClojure"])
+
+(def baznex-website-github-link [:a {:href "https://github.com/baznex/Baznex-Website" :target "_blank"} "BAZNEX Website &ndash; source available on GitHub"])

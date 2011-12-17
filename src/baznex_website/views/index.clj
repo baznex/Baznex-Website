@@ -25,4 +25,5 @@
     
     [:h1 "Notable BAZNEX Projects"]
     [:ul
+      [:li baznex-website-github-link]
       [:li trycljs-github-link]] ))
