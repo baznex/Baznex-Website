@@ -7,6 +7,8 @@
 (defpage "/" []
   (baznex-layout "Boston Autonomous Zone Nerd Nexus"
     [:h1 "What"]
+    [:h3 "We’re a self-directed group of programmers focused on the joys of software development, community, and learning. We want to work together in small groups to contribute and learn as we go."]
+  
     [:ul
       [:li manifesto-link]
       [:li google-group-link]
