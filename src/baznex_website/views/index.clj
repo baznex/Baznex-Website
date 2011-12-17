@@ -11,7 +11,8 @@
   
     [:ul
       [:li manifesto-link]
-      [:li name-link]
+      [:li name-link] ]
+    [:ul
       [:li google-group-link]
       [:li github-link]
       [:li twitter-link] ]
