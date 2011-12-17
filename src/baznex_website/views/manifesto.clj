@@ -1,4 +1,4 @@
-(ns baznex_website.views.manifesto
+(ns baznex-website.views.manifesto
   (:use [baznex-website.views.common]
         [noir.core :only [defpage]]
         hiccup.core

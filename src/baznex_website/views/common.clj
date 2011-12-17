@@ -19,8 +19,9 @@
   [relative-path text]
   [:a {:href relative-path} text])
 
-(def manifesto-link (internal-link "/manifesto" "BAZNEX Manifesto"))
+(def manifesto-link (internal-link "/manifesto" "The Manifesto"))
 
+(def name-link (internal-link "/name" "Why the name BAZNEX?"))
 
 (defn external-link 
   "A link external to the site"
@@ -39,3 +40,7 @@
 (def trycljs-github-link (external-link "https://github.com/baznex/trycljs" "TryCljs &ndash; an online ClojureScript REPL, based off of TryClojure"))
 
 (def baznex-website-github-link (external-link "https://github.com/baznex/Baznex-Website" "BAZNEX Website &ndash; source available on GitHub"))
+
+(def autonoumous-zone-wiki-link (external-link "https://github.com/baznex/Baznex-Website" "Temporary Autonomous Zone - Wikipedia"))
+
+(def autonoumous-zone-link (external-link "http://www.sacred-texts.com/eso/taz.htm" "Temporary Autonomous Zone"))

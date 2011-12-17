@@ -48,6 +48,10 @@
           (rule "&:hover"
                 emphasis))
 
+    (rule "blockquote"
+      :font-style :italic
+      :margin :10px :10px :15px :10px)
+  
     (rule "#not-found"
           :text-align :center
           :width :600px
