@@ -14,11 +14,13 @@
       [:div#wrapper content]
       [:footer]] ))
 
-(def google-group-link [:a {:href "http://groups.google.com/group/baznex" :target "_blank"} "BAZNEX Google Group"])
+(def google-group-link [:a {:href "http://groups.google.com/group/baznex" :target "_blank"} "BAZNEX @ Google Groups"])
 
 (def sprout-link [:a {:href "http://thesprouts.org/studios" :target "_blank"} "Sprout in Davis Square"])
 
 (def manifesto-link [:a {:href "/manifesto"} "BAZNEX Manifesto"])
+
+(def twitter-link [:a {:href "http://twitter.com/#!/search?q=%23baznex"} "#baznex @ Twitter"])
 
 (def github-link [:a {:href "http://www.github.com/baznex" :target "_blank"} "BAZNEX @ GitHub"])
 

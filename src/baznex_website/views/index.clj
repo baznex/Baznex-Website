@@ -12,8 +12,9 @@
     [:ul
       [:li manifesto-link]
       [:li google-group-link]
-      [:li github-link]]
-    
+      [:li github-link]
+      [:li twitter-link] ]
+
     [:h1 "Where"]
     [:p "Currently gathering at " sprout-link] 
   
@@ -28,4 +29,4 @@
     [:h1 "Notable BAZNEX Projects"]
     [:ul
       [:li baznex-website-github-link]
-      [:li trycljs-github-link]] ))
+      [:li trycljs-github-link] ] ))
