@@ -18,7 +18,7 @@
           :font-family "'Helvetica Neue',Helvetica,Verdana")
     (rule "#wrapper"
           fldi
-          :padding-bottom :100px)
+          :padding-bottom :50px)
     (rule "h1"
           :font-weight :bold
           :margin-top :15px
