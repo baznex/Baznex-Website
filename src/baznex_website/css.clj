@@ -48,6 +48,9 @@
       :font-style :italic
       :margin :10px :10px :15px :10px)
   
+    (rule "em"
+            :font-weight :bold)
+  
     (rule "#not-found"
           :text-align :center
           :width :600px
