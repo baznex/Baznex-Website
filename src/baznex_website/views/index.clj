@@ -32,4 +32,5 @@
     [:ul
       [:li baznex-website-github-link]
       [:li trycljs-github-link]
+      [:li import-github-link]
       [:li cljs+midje-github-link]]))

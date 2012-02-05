@@ -26,6 +26,7 @@
   (def github-link (external-link "http://www.github.com/baznex" "BAZNEX @ GitHub"))
   (def trycljs-github-link (external-link "https://github.com/baznex/trycljs" "TryCljs &ndash; an online ClojureScript REPL, based off of TryClojure"))
   (def cljs+midje-github-link (external-link "https://github.com/baznex/Midje/tree/cljs" "Testing ClojureScript with Midje"))
+  (def import-github-link (external-link "https://github.com/baznex/imports" "The unofficial new home of clojure.contrib.import-static, used for importing static Java methods/fields into Clojure programs"))
   (def baznex-website-github-link (external-link "https://github.com/baznex/Baznex-Website" "BAZNEX Website &ndash; source available on GitHub"))
   (def autonoumous-zone-wiki-link (external-link "https://github.com/baznex/Baznex-Website" "Temporary Autonomous Zone - Wikipedia"))
   (def autonoumous-zone-link (external-link "http://www.sacred-texts.com/eso/taz.htm" "Temporary Autonomous Zone")))
